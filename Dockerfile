@@ -11,4 +11,5 @@ RUN mkdir -p /usr/local/
 COPY analyticsd /usr/local/analyticsd
 
 RUN mkdir -p /usr/local/analyticsd/conf
-COPY analyticsdOverride.properties /usr/local/analyticsd/conf/
+# COPY analyticsdOverride.properties /usr/local/analyticsd/conf/
+COPY env.sh /usr/bin/
