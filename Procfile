@@ -1,1 +1,1 @@
-worker: /usr/env.sh && /usr/local/analyticsd/bin/analyticsd
+worker: /usr/bin/env.sh && /usr/local/analyticsd/bin/analyticsd
