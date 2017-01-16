@@ -2,11 +2,14 @@ This is the algorithm we will follow for sending GPS Data to Server from iOS APP
 
 We will create 3 settings in APP:
 1. Minimum Distance Travelled = 10meters
+
 2. Minimum Duration Spend = 20 minutes
+
 3. Periodic Update Schedule = 8 hrs
 
 Each time the user changes location, iOS fires a event with old location and new location. We will set this event to fire when the relative position of user changes by 10meters.
->From this event we will compute the time spent at the last location if it is less than 20 minutes we will drop/discard/ignore this data.
+
+From this event we will compute the time spent at the last location if it is less than 20 minutes we will drop/discard/ignore this data.
 If it is more than 20 minutes we will upload it to server.
 We will also record the new location in Memory as "lastRecordedLocation with a timestamp"
 
