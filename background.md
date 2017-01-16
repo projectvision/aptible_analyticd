@@ -1,6 +1,7 @@
 This is the algorithm we will follow for sending GPS Data to Server from iOS APP.
 
 We will create 3 settings in APP:
+
 1. Minimum Distance Travelled = 10meters
 
 2. Minimum Duration Spend = 20 minutes
